@@ -40,6 +40,9 @@ namespace PP_LINKEDLIST_CSHARP
             }
         }
 
+        /// <summary>
+        /// Public properties which will be used to access the required data from Node Object.
+        /// </summary>
         public Node<T> FirstNode
         {
             get { return _FirstNode; }
@@ -73,11 +76,20 @@ namespace PP_LINKEDLIST_CSHARP
         #endregion
 
         #region Public Methods
+
+        /// <summary>
+        /// Overridden ToString Method to display data as output in string
+        /// </summary>
+        /// <returns>String value of Data</returns>
         public override string ToString()
         {
             return _Data.ToString();
         }
 
+        /// <summary>
+        /// This method will convert complete List in String Format & then will be displayed
+        /// </summary>
+        /// <returns>String form of complete List</returns>
         public string ListToString()
         {
             Node<T> n1 = FirstNode;
