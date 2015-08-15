@@ -63,10 +63,10 @@ namespace PP_LINKEDLIST_CSHARP
         }
 
         /// <summary>
-        /// Node Object Data input can be initialized with both the inputs as well
+        /// Node Object Data input can be initialized & its Previous Node Linking can be initialized as well
         /// </summary>
         /// <param name="Data">Data parameter will be stored in the object</param>
-        /// <param name="Next">Next Linked Node Object will be stored</param>
+        /// <param name="Previous">Previous Linked Node Object will be stored</param>
         public Node(T Data, Node<T> Previous)
         {
             this.Data = Data;
