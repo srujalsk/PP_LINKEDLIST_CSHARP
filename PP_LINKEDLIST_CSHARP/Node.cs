@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,6 +63,9 @@ namespace PP_LINKEDLIST_CSHARP
         /// <param name="Data">Data parameter will be stored in the object</param>
         public Node(T Data)
         {
+            #if DEBUG
+                Debug.WriteLine("New Node Object Created....");
+            #endif
             this.Data = Data;
             Next = null;
         }
@@ -73,6 +77,9 @@ namespace PP_LINKEDLIST_CSHARP
         /// <param name="Previous">Previous Linked Node Object will be stored</param>
         public Node(T Data, Node<T> Previous)
         {
+            #if DEBUG
+                Debug.WriteLine("New Node Object Created....");
+            #endif
             this.Data = Data;
             Previous.Next = this;
         }
