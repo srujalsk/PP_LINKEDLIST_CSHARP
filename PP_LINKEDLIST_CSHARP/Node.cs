@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace PP_LINKEDLIST_CSHARP
 {
+    /// <summary>
+    /// This is the Node Class which is used to store object which you would like to store in Linked List
+    /// </summary>
+    /// <typeparam name="T">Used to initialize the type of object which will be stored in Linked List</typeparam>
     public class Node<T>
     {
         #region Variables & Properties
@@ -63,7 +67,7 @@ namespace PP_LINKEDLIST_CSHARP
         }
 
         /// <summary>
-        /// Node Object Data input can be initialized & its Previous Node Linking can be initialized as well
+        /// Node Object Data input can be initialized and its Previous Node Linking can be initialized as well
         /// </summary>
         /// <param name="Data">Data parameter will be stored in the object</param>
         /// <param name="Previous">Previous Linked Node Object will be stored</param>
@@ -87,7 +91,7 @@ namespace PP_LINKEDLIST_CSHARP
         }
 
         /// <summary>
-        /// This method will convert complete List in String Format & then will be displayed
+        /// This method will convert complete List in String Format and then will be displayed
         /// </summary>
         /// <returns>String form of complete List</returns>
         public string ListToString()
